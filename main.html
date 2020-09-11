@@ -4,14 +4,79 @@
 		<meta charset="utf-8" />
 		<title>后台管理系统</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
-		<link href="css/adminpage.min.css" rel="stylesheet" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/mainpage.mini.css" rel="stylesheet" />
+		<link href="css/jquery-ui.min.css" rel="stylesheet" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="container">
+			<!-- the head bar -->
+			<nav class="main-nav-head navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#example-navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" style="font-size: 20px;">首页</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-left" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">客户端</a></li>
+						<li><a href="#">服务器</a></li>
+						<li><a href="#">其  他</a></li>
+					</ul>
+				</div>
+				<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">你好,neween</a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><span class="glyphicon glyphicon-user"></span>个人信息</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-lock"></span>修改密码</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-comment"></span>我的消息</a></li>
+							</ul>
+						</li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+			<!-- main page -->
+			<div id="mainpage">
+				<!-- left -->
+				<div id="accordion">
+				  <h3>部分 1</h3>
+				  <div>
+				    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget.
+				    Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+				    condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros.
+				    Nam mi. Proin viverra leo ut odio.</p>
+				  </div>
+				  <h3>部分 2</h3>
+				  <div>
+				    <p>Sed non urna. Phasellus eu ligula. Vestibulum sit amet purus.
+				    Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
+				    faucibus interdum tellus libero ac justo.</p>
+				  </div>
+				  <h3>部分 3</h3>
+				  <div>
+				    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+				    Quisque lobortis.Phasellus pellentesque purus in massa.</p>
+				    <ul>
+				      <li>List item one</li>
+				      <li>List item two</li>
+				      <li>List item three</li>
+				    </ul>
+				  </div>
+			</div>
+			
 			
 		</div>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
